@@ -1,0 +1,138 @@
+{
+    "query": {
+        "count": 1,
+        "created": "2016-09-01T21:55:13Z",
+        "lang": "en-US",
+        "results": {
+            "channel": {
+                "units": {
+                    "distance": "km",
+                    "pressure": "mb",
+                    "speed": "km/h",
+                    "temperature": "C"
+                },
+                "title": "Yahoo! Weather - Edmonton, AB, CA",
+                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-8676/",
+                "description": "Yahoo! Weather for Edmonton, AB, CA",
+                "language": "en-us",
+                "lastBuildDate": "Thu, 01 Sep 2016 03:55 PM MDT",
+                "ttl": "60",
+                "location": {
+                    "city": "Edmonton",
+                    "country": "Canada",
+                    "region": " AB"
+                },
+                "wind": {
+                    "chill": "68",
+                    "direction": "270",
+                    "speed": "35.40"
+                },
+                "atmosphere": {
+                    "humidity": "55",
+                    "pressure": "31391.84",
+                    "rising": "0",
+                    "visibility": "25.91"
+                },
+                "astronomy": {
+                    "sunrise": "6:45 am",
+                    "sunset": "8:22 pm"
+                },
+                "image": {
+                    "title": "Yahoo! Weather",
+                    "width": "142",
+                    "height": "18",
+                    "link": "http://weather.yahoo.com",
+                    "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                },
+                "item": {
+                    "title": "Conditions for Edmonton, AB, CA at 02:00 PM MDT",
+                    "lat": "53.52644",
+                    "long": "-113.517441",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-8676/",
+                    "pubDate": "Thu, 01 Sep 2016 02:00 PM MDT",
+                    "condition": {
+                        "code": "34",
+                        "date": "Thu, 01 Sep 2016 02:00 PM MDT",
+                        "temp": "20",
+                        "text": "Mostly Sunny"
+                    },
+                    "forecast": [{
+                        "code": "47",
+                        "date": "01 Sep 2016",
+                        "day": "Thu",
+                        "high": "21",
+                        "low": "12",
+                        "text": "Scattered Thunderstorms"
+                    }, {
+                        "code": "39",
+                        "date": "02 Sep 2016",
+                        "day": "Fri",
+                        "high": "14",
+                        "low": "10",
+                        "text": "Scattered Showers"
+                    }, {
+                        "code": "39",
+                        "date": "03 Sep 2016",
+                        "day": "Sat",
+                        "high": "11",
+                        "low": "7",
+                        "text": "Scattered Showers"
+                    }, {
+                        "code": "26",
+                        "date": "04 Sep 2016",
+                        "day": "Sun",
+                        "high": "10",
+                        "low": "5",
+                        "text": "Cloudy"
+                    }, {
+                        "code": "26",
+                        "date": "05 Sep 2016",
+                        "day": "Mon",
+                        "high": "13",
+                        "low": "5",
+                        "text": "Cloudy"
+                    }, {
+                        "code": "30",
+                        "date": "06 Sep 2016",
+                        "day": "Tue",
+                        "high": "15",
+                        "low": "7",
+                        "text": "Partly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "07 Sep 2016",
+                        "day": "Wed",
+                        "high": "13",
+                        "low": "8",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "08 Sep 2016",
+                        "day": "Thu",
+                        "high": "13",
+                        "low": "7",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "09 Sep 2016",
+                        "day": "Fri",
+                        "high": "14",
+                        "low": "7",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "26",
+                        "date": "10 Sep 2016",
+                        "day": "Sat",
+                        "high": "18",
+                        "low": "9",
+                        "text": "Cloudy"
+                    }],
+                    "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/34.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Sunny\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Thu - Scattered Thunderstorms. High: 21Low: 12\n<BR /> Fri - Scattered Showers. High: 14Low: 10\n<BR /> Sat - Scattered Showers. High: 11Low: 7\n<BR /> Sun - Cloudy. High: 10Low: 5\n<BR /> Mon - Cloudy. High: 13Low: 5\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-8676/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+                    "guid": {
+                        "isPermaLink": "false"
+                    }
+                }
+            }
+        }
+    }
+}

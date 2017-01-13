@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div id='screens'>
+    {% for screen in screens %}
+    <p><a href='/signs/{{ screen.slug }}/'>{{ screen.name }}</a></p>
+    {% endfor %}
+</div>
+{% endblock %}

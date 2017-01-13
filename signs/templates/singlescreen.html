@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block headcss %}
+{{ block.super }}
+<link rel="stylesheet" href="/static/css/signage.css" />
+{% endblock %}
+{% block content %}
+<div class="row expanded">
+    <div class="small-9 columns">
+    <center>
+        <div class="images" id="images">
+        {% for imagequeue in screen.images.all %}
+        {% for image in imagequeue.images.all %}
+        <img class="image-item" src="/media/{{ image.image }}">
+        {% endfor %}
+        {% endfor %}
+        </div>
+    </center>
+    </div>
+    <div class="small-3 columns">
+        <div class="news" id="news">
+        {% for newsqueue in screen.newsitems.all %}
+        {% for newsitem in newsqueue.newsitems.all %}
+        <div id="newsitem">
+        <p class="newstitle">{{ newsitem.title }}</p>
+        <p class="news">{{ newsitem.text }}</p>
+        </div>
+        {% endfor %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="row expanded">
+    <p class="spacer"></p>
+</div>
+<div class="row expanded" id="footer">
+    <div class="small-2 columns" id="datetime">
+        <p class="time" id="signtime"></p>
+        <p class="time" id="signdate"></p>
+    </div>
+    <div class="small-10 columns">
+        <div class="tickerline" id="tickerline">
+        {% for tickerlist in screen.tickers.all %}
+        {% for ticker in tickerlist.tickers.all %}
+        <div><p class="ticker">{{ ticker }}</p></div>
+        {% endfor %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block bodyscript %}
+{{ block.super }}
+<script type="text/javascript" src="/static/js/signage.js"></script>
+<script>
+//sign.getWeather(function(location) {
+//    var mydiv = document.getElementById("news");
+//    var newcontent = document.createElement("div");
+//    newcontent.innerHTML = location;
+//    while (newcontent.firstChild) {
+//        mydiv.appendChild(newcontent.firstChild);
+//    }
+//    document.getElementById("weather").innerHTML = location;
+//});
+$(document).ready(function() {
+            $('.images').slick({
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                fade: true,
+                cssEase: 'ease-in-out',
+                prevArrow: false,
+                nextArrow: false
+            });
+            $('.news').slick({
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                fade: true,
+                cssEase: 'ease-in-out',
+                prevArrow: false,
+                nextArrow: false
+            });
+            $('.tickerline').slick({
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                fade: true,
+                cssEase: 'ease-in-out',
+                prevArrow: false,
+                nextArrow: false
+            });
+        });
+setInterval(function() {
+    document.getElementById("signtime").innerHTML = moment().format('LTS');
+    document.getElementById("signdate").innerHTML = moment().format('YYYY-MM-DD');
+}, 1000);
+        var img_maxWidth = $(window).width() * 0.74;
+        var img_maxHeight = $(window).height() * 0.76;
+        var footer_height = $(window).height() * 0.23;
+        var footer_pad_top = footer_height * 0.15;
+</script>
+{% endblock %}
